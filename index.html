@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>4L3CT1ON'S Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e0f7ff;
+      color: #000;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      background-color: #a0d8ff;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #74c3ff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .menu-wrapper {
+      position: relative;
+    }
+
+    .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #cbeeff;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      top: 100%;
+      left: 0;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #b4e4ff;
+    }
+
+    .menu-wrapper:hover .dropdown-content {
+      display: block;
+    }
+
+    .mode-buttons {
+      display: flex;
+      gap: 10px;
+      padding: 10px 0;
+    }
+
+    .mode-buttons button {
+      padding: 10px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .subtitle {
+      text-align: center;
+      margin: 30px 0 10px;
+      font-size: 1.5em;
+      color: inherit;
+    }
+
+    .uploads {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-family: 'Freckle Face', cursive;
+      font-size: 1.8em;
+      color: inherit;
+    }
+
+    /* Dark Mode Styles */
+    .dark-mode {
+      background-color: #0a1f33;
+      color: #fff;
+    }
+
+    .dark-mode header {
+      background-color: #103b66;
+    }
+
+    .dark-mode nav {
+      background-color: #145a8f;
+    }
+
+    .dark-mode .dropdown-content {
+      background-color: #1e3f66;
+    }
+
+    .dark-mode .dropdown-content a {
+      color: white;
+    }
+
+    .dark-mode .dropdown-content a:hover {
+      background-color: #2c5a8f;
+    }
+
+    .dark-mode .mode-buttons button {
+      background-color: #103b66;
+      color: white;
+      border: 1px solid #2c5a8f;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Welcome to 4L3CT1ON'S site
+  </header>
+
+  <nav>
+    <div class="menu-wrapper">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="YOUR_ABOUT_ME_LINK_HERE">About Me</a>
+        <a href="YOUR_FUN_SONGS_LINK_HERE">Fun Songs</a>
+      </div>
+    </div>
+
+    <div class="mode-buttons">
+      <button onclick="enableDarkMode()">Dark Mode</button>
+      <button onclick="disableDarkMode()">Light Mode</button>
+    </div>
+  </nav>
+
+  <div class="subtitle">My newest uploads</div>
+
+  <div class="uploads">
+    <!-- Add your YouTube embeds here -->
+  </div>
+
+  <footer>
+    yay
+  </footer>
+
+  <script>
+    function enableDarkMode() {
+      document.body.classList.add('dark-mode');
+    }
+
+    function disableDarkMode() {
+      document.body.classList.remove('dark-mode');
+    }
+  </script>
+
+</body>
+</html>
+
